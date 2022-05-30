@@ -61,8 +61,9 @@
 	</head>
 	<body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 500}">
       
-      
-      <!-- Messenger Chat plugin Code -->
+		
+		
+		<!-- Messenger Chat plugin Code -->
     <div id="fb-root"></div>
 
     <!-- Your Chat plugin code -->
@@ -73,11 +74,14 @@
       var chatbox = document.getElementById('fb-customer-chat');
       chatbox.setAttribute("page_id", "104153344576056");
       chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
 
+    <!-- Your SDK code -->
+    <script>
       window.fbAsyncInit = function() {
         FB.init({
           xfbml            : true,
-          version          : 'v12.0'
+          version          : 'v14.0'
         });
       };
 
@@ -89,9 +93,8 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-      
-      
-      
+		
+		    
       
 		<div class="loading-overlay">
 			<div class="bounce-loader">
